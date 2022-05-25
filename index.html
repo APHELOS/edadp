@@ -17,8 +17,8 @@
             <button class="cajas" id="btn2">formula 2</button>
             <p>Resultado</p>
             <div class="res" id="resultado"></div>
-            <input class="btn" type="submit" value="guardar">
-            <input class="btn" type="reset" value="limpiar">
+            <input class="btnn" type="reset" value="guardar">
+            <input class="btnn" type="reset" value="limpiar">
         </form>
         
         <script>
@@ -28,7 +28,7 @@
             c.addEventListener('click',for2);
             function for1(){
                 var b=parseInt(document.getElementById('edad').value);
-                var s=(16*math.log(b))+31;
+                var s=(16*Math.log(b))+31;
                 document.getElementById("resultado").innerHTML="La edad humada de tu perro es: "+s
             }
             function for2(){
