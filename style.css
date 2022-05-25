@@ -19,7 +19,7 @@ body {
     color:#000;
 }
 .formulario {
-    background-color:#f6d6d5;
+    background-color:rgba(0,0,0,.2);
     width:100%;
     padding:30px;
     margin:auto ;
