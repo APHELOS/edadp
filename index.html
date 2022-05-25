@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <title>formulario</title>
+    </head>
+    <body>
+        <form class="formulario">
+            <h1 class="titlulo">Llena el formulario</h1>
+            <input class="cajas" id="edad" type="text" placeholder="Edad de tu perro">
+            
+            
+            <p class="termino"></p>
+            <button class="cajas" id="btn">formula 1</button>
+            <button class="cajas" id="btn2">formula 2</button>
+            <p>Resultado</p>
+            <div class="res" id="resultado"></div>
+            <input class="btn" type="submit" value="guardar">
+            <input class="btn" type="reset" value="limpiar">
+        </form>
+        
+        <script>
+            var a=document.getElementById('btn');
+            a.addEventListener('click',for1);
+            var c=document.getElementById('btn2');
+            c.addEventListener('click',for2);
+            function for1(){
+                var b=parseInt(document.getElementById('edad').value);
+                var s=(16*math.log(b))+31;
+                document.getElementById("resultado").innerHTML="La edad humada de tu perro es: "+s
+            }
+            function for2(){
+                var b=parseInt(document.getElementById('edad').value);
+                var s=b*7
+                document.getElementById("resultado").innerHTML="La edad humana de tu perro es: "+s
+            }
+        </script>
+    </body>
+</html>
